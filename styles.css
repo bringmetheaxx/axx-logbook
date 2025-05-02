@@ -77,3 +77,15 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #eaeaea;
 }
+#searchSection {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#searchInput {
+    padding: 8px 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
