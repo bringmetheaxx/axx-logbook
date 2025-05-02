@@ -47,5 +47,28 @@ function displayLogEntries() {
     });
 }
 
+// Function to filter log entries based on search input
+document.getElementById('searchInput').addEventListener('input', function () {
+    const searchTerm = this.value.toLowerCase();
+    const entries = JSON.parse(localStorage.getItem('logEntries')) || [];
+    const entryList = document.getElementById('entryList');
+
+    // Clear the table
+    entryList.innerHTML = '';
+
+    // Filter and display matching entries
+    entries
+        .filter(entry => entry.text.toLowerCase().includes(searchTerm))
+        .forEach(entry => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${entry.date}</td>
+                <td>${entry.hour}</td>
+                <td>${entry.text}</td>
+            `;
+            entryList.appendChild(tr);
+        });
+});
+
 // Initialize the log entries when the page loads
 document.addEventListener('DOMContentLoaded', displayLogEntries);
