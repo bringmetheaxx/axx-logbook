@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Logbook</h1>
+        
+        <!-- Log Entry Form -->
+        <form id="logForm">
+            <textarea id="logEntry" placeholder="Write your entry..." required></textarea>
+            <button type="submit">Add Entry</button>
+        </form>
+
+        <!-- Display Log Entries -->
+        <div id="logEntries">
+            <h2>Recent Entries:</h2>
+            <table id="entryTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Hour</th>
+                        <th>Entry</th>
+                    </tr>
+                </thead>
+                <tbody id="entryList">
+                    <!-- Log entries will appear here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
