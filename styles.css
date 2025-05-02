@@ -89,3 +89,37 @@ tr:hover {
     border-radius: 5px;
     font-size: 14px;
 }
+.flex-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.log-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.schedule-section {
+    flex: 1;
+    min-width: 300px;
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: #eee;
+}
