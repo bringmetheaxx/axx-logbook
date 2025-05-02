@@ -37,16 +37,16 @@ form textarea {
 form button {
     width: 100%;
     padding: 10px;
-    background-color: #B39DDB; /* Lilac color */
+    background-color: #B39DDB;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+    cursor: pointer;
 }
 
 form button:hover {
-    background-color: #9C89D6; /* Slightly darker lilac for hover effect */
+    background-color: #9C89D6;
 }
 
 #logEntries {
